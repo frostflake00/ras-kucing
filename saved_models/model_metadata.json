@@ -1,0 +1,39 @@
+{
+    "project_name": "Klasifikasi 3 Ras Kucing (Oxford-IIIT Pet)",
+    "target_classes": [
+        "Birman",
+        "Ragdoll",
+        "Siamese"
+    ],
+    "feature_extractor": "MobileNetV2 (ImageNet weights, Global Average Pooling)",
+    "feature_dimension": 1280,
+    "input_image_size": [
+        224,
+        224,
+        3
+    ],
+    "preprocessing": "resize_bilinear, scale_[-1, 1]",
+    "random_state": 42,
+    "best_knn_parameters": {
+        "knn__metric": "euclidean",
+        "knn__n_neighbors": "7",
+        "knn__weights": "distance"
+    },
+    "best_svm_parameters": {
+        "svm__C": "10",
+        "svm__gamma": "scale",
+        "svm__kernel": "rbf"
+    },
+    "test_evaluation": {
+        "knn_accuracy": 0.8,
+        "knn_macro_f1": 0.8053221288515405,
+        "svm_accuracy": 0.875,
+        "svm_macro_f1": 0.8763798641847421
+    },
+    "environment_versions": {
+        "python": "3.11.9",
+        "scikit_learn": "1.9.1",
+        "tensorflow": "2.21.0",
+        "numpy": "2.4.6"
+    }
+}
