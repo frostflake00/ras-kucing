@@ -26,19 +26,7 @@ Penelitian ini membandingkan kinerja model **K-Nearest Neighbors (KNN)** dan **S
 
 ## 🧠 3. Metodologi & Alur Pemrosesan (Pipeline)
 
-Sistem bekerja melalui arsitektur hibrida (Transfer Learning Feature Extractor + Classical Classifier):
-
-```mermaid
-flowchart LR
-    A[Citra Input Raw] --> B[Pre-processing 224x224 & Scale [-1, 1]]
-    B --> C[MobileNetV2 Feature Extractor GlobalAvgPool]
-    C --> D[Vektor Fitur 1.280-Dimensi]
-    D --> E[StandardScaler Normalisasi]
-    E --> F1[KNN Classifier]
-    E --> F2[SVM RBF Classifier]
-    F1 --> G1[Evaluasi & Analisis]
-    F2 --> G2[Deploy ke WebApp Streamlit]
-```
+Sistem bekerja melalui arsitektur hibrida (Transfer Learning Feature Extractor + Classical Classifier)
 
 1. **Dataset**: Oxford-IIIT Pet Dataset, difilter secara ketat sebanyak 600 citra seimbang (*balanced dataset*):
    - Birman: 200 citra
