@@ -61,6 +61,8 @@ Evaluasi model pada data uji independen (Test Set: 120 citra, 40 per ras):
 ## 👥 5. Informasi Pembuat
 Proyek ini disusun untuk keperluan akademik mata kuliah **Pengenalan Pola (Pattern Recognition)** Program Studi Informatika / Ilmu Komputer Semester 7.
 
+## 👥 6. Data set yng digunakan
+https://www.kaggle.com/datasets/tanlikesmath/the-oxfordiiit-pet-dataset
 
-## 👥 6. akses web
+## 👥 7. akses web
 https://ras-kucing-birman-ragdoll-siamese.streamlit.app/
